@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="@string/title_practice"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:onClick="openPractice"
         android:textSize="30sp" />
 
