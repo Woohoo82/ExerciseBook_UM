@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_home"
-        android:title="@string/title_home" />
+        android:icon="@android:drawable/arrow_up_float"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/ac_help"
-        android:title="@string/title_help" />
+    <item
+        android:id="@+id/ac_help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/title_help"
+        app:showAsAction="never|always" />
 
 </menu>
