@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hu.tannis.zver.exercisebook_um.MainActivity">
+
+    <TextView
+        android:id="@+id/text_practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_practice"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:onClick="openPractice"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_chorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_chorder"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:onClick="openChorder"
+        android:textSize="30sp" />
+
+</LinearLayout>

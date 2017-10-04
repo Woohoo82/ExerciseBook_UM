@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zene Megértése Munkafüzet</string>
+    <string name="title_guitar">Gitár</string>
+    <string name="title_help">Súgó</string>
+    <string name="title_home">Nyitólap</string>
+    <string name="title_piano">Zongora</string>
+    <string name="title_chorder">Akkord kereső</string>
+    <string name="title_practice">Gyakorlás</string>
+</resources>

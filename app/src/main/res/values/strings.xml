@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exercise Book of Understanding Music</string>
+    <string name="title_piano">Piano</string>
+    <string name="title_guitar">Guitar</string>
+    <string name="title_practice">Practice</string>
+    <string name="title_help">Help</string>
+    <string name="title_home">Home</string>
+    <string name="title_chorder">Chord Finder</string>
+</resources>
