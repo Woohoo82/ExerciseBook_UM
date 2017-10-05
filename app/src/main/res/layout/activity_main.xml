@@ -32,4 +32,28 @@
         android:onClick="openChorder"
         android:textSize="30sp" />
 
+    <TextView
+        android:id="@+id/text_metronome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_metronome"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:onClick="openMetronome"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_eartrainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_eartrainer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:onClick="openEarTrainer"
+        android:textSize="30sp" />
+
 </LinearLayout>

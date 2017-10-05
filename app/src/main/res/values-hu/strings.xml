@@ -7,4 +7,8 @@
     <string name="title_piano">Zongora</string>
     <string name="title_chorder">Akkord kereső</string>
     <string name="title_practice">Gyakorlás</string>
+    <string name="lesson">Gyakorlat szövege</string>
+    <string name="title_eartrainer">Hallás Tréning</string>
+    <string name="title_metronome">Metronóm</string>
+    <string name="message_na">Ebben a verzióban nem elérhető.</string>
 </resources>
