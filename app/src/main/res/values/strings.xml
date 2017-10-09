@@ -9,4 +9,7 @@
     <string name="title_metronome">Metronome</string>
     <string name="title_eartrainer">Ear Trainer</string>
     <string name="message_na">This function not reachable in this version.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

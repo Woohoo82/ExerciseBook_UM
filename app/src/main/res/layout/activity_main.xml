@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context="hu.tannis.zver.exercisebook_um.MainActivity">
 
+    <!-- TODO: menu items
+      Ear trainer: identify distance, identify chords
+      Metronome: Rythm generator, training by tap
+      Jutalmazási rendszer
+    -->
+
     <TextView
         android:id="@+id/text_practice"
         android:layout_width="fill_parent"
