@@ -1,7 +1,12 @@
 package hu.tannis.zver.exercisebook_um;
 
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import values.ExePiano01;
+
+import static java.lang.System.*;
 
 public class PracticeActivity extends AppCompatActivity {
 
@@ -9,6 +14,10 @@ public class PracticeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().add(R.id.exerciseContainer, ExePiano01.newInstance(1)).commit();
+        }
     }
 }
 

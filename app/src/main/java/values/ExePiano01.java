@@ -10,25 +10,13 @@ import android.view.ViewGroup;
 
 import hu.tannis.zver.exercisebook_um.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link ExePiano01.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link ExePiano01#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ExePiano01 extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_PARAM1 = "num_of_lesson";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private int num_of_lesson;
 
-    private OnFragmentInteractionListener mListener;
+    //private OnFragmentInteractionListener mListener;
 
     public ExePiano01() {
         // Required empty public constructor
@@ -38,16 +26,14 @@ public class ExePiano01 extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
+     * @param no_of_lesson Parameter 1.
      * @return A new instance of fragment ExePiano01.
      */
-    // TODO: Rename and change types and number of parameters
-    public static ExePiano01 newInstance(String param1, String param2) {
+
+    public static ExePiano01 newInstance(int no_of_lesson) {
         ExePiano01 fragment = new ExePiano01();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM1, no_of_lesson);
         fragment.setArguments(args);
         return fragment;
     }
@@ -56,8 +42,7 @@ public class ExePiano01 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            num_of_lesson = getArguments().getInt(ARG_PARAM1);
         }
     }
 
@@ -65,11 +50,13 @@ public class ExePiano01 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exe_piano01, container, false);
+        View v = inflater.inflate(R.layout.fragment_exe_piano01, container, false);
+        //System.out.println("debug: 'fragment_exe_piano01' created\n");
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    /*public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
@@ -90,7 +77,7 @@ public class ExePiano01 extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
+    }*/
 
     /**
      * This interface must be implemented by activities that contain this
@@ -102,8 +89,8 @@ public class ExePiano01 extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    /*public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
-    }
+    }*/
 }

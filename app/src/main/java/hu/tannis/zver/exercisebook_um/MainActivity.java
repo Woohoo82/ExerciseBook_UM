@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
         //Intent i = new Intent(this, MetronomeActivity.class);
         //startActivity(i);
 
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, R.string.message_na, duration);
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.message_na, Toast.LENGTH_LONG);
         toast.show();
     }
 
@@ -50,10 +47,15 @@ public class MainActivity extends AppCompatActivity {
         //Intent i = new Intent(this, EarTrainerActivity.class);
         //startActivity(i);
 
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.message_na, Toast.LENGTH_LONG);
+        toast.show();
+    }
 
-        Toast toast = Toast.makeText(context, R.string.message_na, duration);
+    public void openTuner(View view) {
+        //Intent i = new Intent(this, TunerActivity.class);
+        //startActivity(i);
+
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.message_na, Toast.LENGTH_LONG);
         toast.show();
     }
 }

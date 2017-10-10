@@ -24,7 +24,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:onClick="openPractice"
-        android:textSize="30sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/text_chorder"
@@ -36,7 +36,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:onClick="openChorder"
-        android:textSize="30sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/text_metronome"
@@ -46,9 +46,9 @@
         android:gravity="center"
         android:text="@string/title_metronome"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorInactive"
         android:onClick="openMetronome"
-        android:textSize="30sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/text_eartrainer"
@@ -58,8 +58,20 @@
         android:gravity="center"
         android:text="@string/title_eartrainer"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorInactive"
         android:onClick="openEarTrainer"
-        android:textSize="30sp" />
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/text_tuner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_tuner"
+        android:textAlignment="center"
+        android:textColor="@color/colorInactive"
+        android:onClick="openTuner"
+        android:textSize="26sp" />
 
 </LinearLayout>

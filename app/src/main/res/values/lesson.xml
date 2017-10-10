@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="lesson" type="string">Text of exercise</item>
+    <item name="lesson" type="string">Title of piano exercise 01</item>
 </resources>
