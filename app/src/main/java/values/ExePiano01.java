@@ -1,12 +1,16 @@
 package values;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import hu.tannis.zver.exercisebook_um.R;
 
@@ -49,9 +53,18 @@ public class ExePiano01 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_exe_piano01, container, false);
-        //System.out.println("debug: 'fragment_exe_piano01' created\n");
+
+        Resources res = getResources();
+
+        String[] a = res.getStringArray(R.array.main_array);
+        String[] b = res.getStringArray(R.array.sub_array);
+
+        String r = String.format(a[0], b[0], b[1]);
+
+        TextView t = (TextView)v.findViewById(R.id.textView);
+        t.setText(Html.fromHtml(r));
+
         return v;
     }
 

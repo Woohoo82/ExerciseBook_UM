@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="lesson" type="string">Title of piano exercise 01</item>
+    <string-array name="main_array" formatted="false">
+        <item><![CDATA[
+            <h2>Én irányítom az ujjaimat</h2><br>
+            <p>Ujjak előre <b>(30 másodperc)</b> felemelve <b>(30 másodperc)</b>. Koncentrálj a <b>%s</b> és a <b>%s ujjakra.</b></p>]]>
+        </item>
+        <item>%s has an opinion about %s.</item>
+    </string-array>
+
+    <string-array name="sub_array">
+        <item>J.K. középső(3)</item>
+        <item>B.K. kis(5)</item>
+    </string-array>
+
 </resources>
